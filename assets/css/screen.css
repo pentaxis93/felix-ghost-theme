@@ -1964,12 +1964,23 @@ Search                         LOGO                    Login Subscribe
     margin: clamp(40px, 3.64vw + 25.45px, 72px) 0 40px;
 }
 
-.gh-article-tag {
-    margin-bottom: 12px;
+.gh-article-issue {
     font-size: 1.3rem;
     font-weight: 500;
     letter-spacing: 0.01em;
     text-transform: uppercase;
+    color: var(--color-secondary-text);
+}
+
+.gh-article-section {
+    margin-bottom: 24px;
+    font-size: 2.1rem;
+    font-weight: bolder;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-family: var(--font-serif-alt);
+
+    /* Fallback for sections with no colour defined. */
     color: var(--ghost-accent-color);
 }
 
