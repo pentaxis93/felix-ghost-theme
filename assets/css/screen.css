@@ -2068,7 +2068,10 @@ Search                         LOGO                    Login Subscribe
 }
 
 .gh-article-image img {
-    width: 100%;
+    width: auto;
+    max-height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* 14.2. Page template */
