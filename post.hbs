@@ -3,6 +3,14 @@
 
 {{#post}}
 
+{{#if tags.[1]}}
+    <style>
+        :root {
+            --section-color: {{tags.[1].accent_color}};
+        }
+    </style>
+{{/if}}
+
 <main class="gh-main">
 
     <article class="gh-article {{post_class}}">

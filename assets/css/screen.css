@@ -1979,9 +1979,7 @@ Search                         LOGO                    Login Subscribe
     letter-spacing: 0.05em;
     text-transform: uppercase;
     font-family: var(--font-serif);
-
-    /* Fallback for sections with no colour defined. */
-    color: var(--ghost-accent-color);
+    color: var(--section-color, var(--ghost-accent-color));
 }
 
 .gh-article-title {
@@ -2347,7 +2345,7 @@ unless a heading is the very first element in the post content */
 
 blockquote:not([class]) {
     padding-left: 2rem;
-    border-left: 4px solid var(--ghost-accent-color);
+    border-left: 4px solid var(--section-color, var(--ghost-accent-color));
 }
 
 blockquote.kg-blockquote-alt {
