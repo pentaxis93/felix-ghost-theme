@@ -63,7 +63,7 @@ production stylesheet in assets/built/screen.css
     --color-border: rgb(0 0 0 / 0.08);
     --color-dark-border: rgb(0 0 0 / 0.55);
     --font-sans: "Acumin Pro Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    --font-serif: "FF Tisa Pro", Georgia, Times, serif;
+    --font-serif: "LexiaW01", Georgia, Times, serif;
     --font-serif-alt: "FF Tisa Pro", Georgia, Times, serif;
     --font-mono: "JetBrains Mono", Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
     --container-width: 1320px;
@@ -1975,10 +1975,10 @@ Search                         LOGO                    Login Subscribe
 .gh-article-section {
     margin-bottom: 24px;
     font-size: 2.1rem;
-    font-weight: bolder;
+    font-weight: 800;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    font-family: var(--font-serif-alt);
+    font-family: var(--font-serif);
 
     /* Fallback for sections with no colour defined. */
     color: var(--ghost-accent-color);
