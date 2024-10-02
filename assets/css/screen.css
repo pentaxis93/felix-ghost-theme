@@ -1994,13 +1994,15 @@ Search                         LOGO                    Login Subscribe
     font-size: clamp(1.5rem, 0.45vw + 1.32rem, 1.9rem);
     line-height: 1.4;
     letter-spacing: -0.018em;
+    color: var(--color-secondary-text);
+    font-weight: 500;
 }
 
 .gh-article-meta {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-top: 20px;
+    margin-top: 28px;
     margin-left: 6px;
 }
 
