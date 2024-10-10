@@ -3,10 +3,10 @@
 
 {{#post}}
 
-{{#if tags.[1]}}
+{{#if primary_tag}}
     <style>
         :root {
-            --section-color: {{tags.[1].accent_color}};
+            --section-color: {{primary_tag.accent_color}};
         }
     </style>
 {{/if}}
@@ -17,13 +17,13 @@
 
         <header class="gh-article-header gh-canvas">
 
+            {{#foreach tags from="2"}}
+                <a class="gh-article-issue" href="{{url}}">{{name}}</a>
+            {{/foreach}}
             {{#if primary_tag}}
-                <a class="gh-article-issue" href="{{primary_tag.url}}">{{primary_tag.name}}</a>
-            {{/if}}
-            {{#if tags.[1]}}
-                {{#tags.[1]}}
+                {{#primary_tag}}
                     <a class="gh-article-section" href="{{url}}" style="color: {{accent_color}}">{{name}}</a>
-                {{/tags.[1]}}
+                {{/primary_tag}}
             {{/if}}
             <h1 class="gh-article-title is-title">{{title}}</h1>
             {{#if custom_excerpt}}
@@ -86,7 +86,7 @@
 
     <!-- Articles in the same issue point backwards, i.e. only show articles created before them in the same issue. -->
     {{#get "posts" include="authors"
-           filter="id:-{{post.id}}+tag:[{{post.primary_tag.slug}}]+created_at:<'{{post.created_at}}'"
+           filter="id:-{{post.id}}+tag:[{{post.tags.[1].slug}}]+created_at:<'{{post.created_at}}'"
            limit="4" as |next|}}
         {{#if next}}
             <section class="gh-container is-grid gh-outer">
@@ -108,7 +108,7 @@
     These recommendations look forwards in time.
     -->
     {{#get "posts" include="authors"
-           filter="id:-{{post.id}}+tag:[{{post.tags.[1].slug}}]+tag:-[{{post.primary_tag.slug}}]+created_at:>'{{post.created_at}}'"
+           filter="id:-{{post.id}}+tag:[{{post.primary_tag.slug}}]+tag:-[{{post.tags.[1].slug}}]+created_at:>'{{post.created_at}}'"
            order="post.created_at ASC" limit="4" as |next|}}
         {{#if next}}
             <section class="gh-container is-grid gh-outer">
