@@ -35,16 +35,16 @@
                 <div class="gh-article-author-image instapaper_ignore">
                     {{#foreach authors}}
                         {{#if profile_image}}
-                            <a href="{{url}}">
+                            <a href="/author/{{slug}}/">
                                 <img class="author-profile-image" src="{{img_url profile_image size="xs"}}" alt="{{name}}">
                             </a>
                         {{else}}
-                            <a href="{{url}}">{{> "icons/avatar"}}</a>
+                            <a href="/author/{{slug}}/">{{> "icons/avatar"}}</a>
                         {{/if}}
                     {{/foreach}}
                 </div>
                 <div class="gh-article-meta-wrapper">
-                    <h4 class="gh-article-author-name">{{authors}}</h4>
+                    <h4 class="gh-article-author-name">{{#foreach authors}}{{#unless @first}}, {{/unless}}<a href="/author/{{slug}}/">{{name}}</a>{{/foreach}}</h4>
                     <div class="gh-article-meta-content">
                         <time class="gh-article-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
                         {{#if reading_time}}
