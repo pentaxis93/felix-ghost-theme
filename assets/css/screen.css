@@ -962,6 +962,10 @@ Search                         LOGO                    Login Subscribe
     color: var(--color-secondary-text);
 }
 
+.gh-card-meta span:not(:last-of-type)::after {
+    content: " \2014 ";
+}
+
 .gh-card-meta svg {
     width: 16px;
     height: 16px;

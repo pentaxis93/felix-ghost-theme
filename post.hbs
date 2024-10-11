@@ -55,7 +55,9 @@
             </div>
             {{/if}}
 
-            {{> "feature-image"}}
+            {{^has tag="#Hide feature image"}}
+                {{> "feature-image"}}
+            {{/has}}
 
         </header>
 
@@ -70,6 +72,10 @@
             {{comments}}
         </div>
     {{/if}}
+
+    <div class="gh-comments gh-canvas">
+        <a href="/ghost/#/editor/post/{{id}}/">Edit this article</a>
+    </div>
 
 </main>
 
