@@ -62,9 +62,9 @@ production stylesheet in assets/built/screen.css
     --color-secondary-text: rgb(0 0 0 / 0.55);
     --color-border: rgb(0 0 0 / 0.08);
     --color-dark-border: rgb(0 0 0 / 0.55);
-    --font-sans: "Acumin Pro Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    --font-serif: "LexiaW01", Georgia, Times, serif;
-    --font-serif-alt: "FF Tisa Pro", Georgia, Times, serif;
+    --font-sans: acumin-variable, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --font-serif: lexia-variable, Georgia, Times, serif;
+    --font-serif-alt: ff-tisa-web-pro, Georgia, Times, serif;
     --font-mono: "JetBrains Mono", Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
     --container-width: 1320px;
     --container-gap: clamp(24px, 1.7032rem + 1.9355vw, 48px);
@@ -930,8 +930,8 @@ Search                         LOGO                    Login Subscribe
 
 .gh-card-title {
     font-size: calc(1.9rem * var(--factor, 1));
-    font-weight: 725;
-    letter-spacing: -0.014em;
+    font-variation-settings: "slnt" 0, "wdth" 72.5, "wght" 450;
+    letter-spacing: 0.012em;
     line-height: 1.3;
 }
 
@@ -1979,7 +1979,7 @@ Search                         LOGO                    Login Subscribe
 .gh-article-section {
     margin-bottom: 24px;
     font-size: 2.1rem;
-    font-weight: 800;
+    font-variation-settings: "wght" 725;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     font-family: var(--font-serif);
@@ -2002,7 +2002,7 @@ Search                         LOGO                    Login Subscribe
 .gh-article-title {
     font-size: calc(clamp(3.4rem, 1.36vw + 2.85rem, 4.6rem) * var(--factor, 1));
     line-height: 1.1;
-    letter-spacing: -0.022em;
+    font-variation-settings: "slnt" 0, "wdth" 70, "wght" 550;
 }
 
 .gh-article-excerpt {
@@ -2010,9 +2010,9 @@ Search                         LOGO                    Login Subscribe
     max-width: 720px;
     font-size: clamp(1.5rem, 0.45vw + 1.32rem, 1.9rem);
     line-height: 1.4;
-    letter-spacing: -0.018em;
+    letter-spacing: -0.01em;
     color: var(--color-secondary-text);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .gh-article-meta {
@@ -2062,13 +2062,14 @@ Search                         LOGO                    Login Subscribe
 .gh-article-meta-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 2px;
 }
 
 .gh-article-author-name {
-    font-size: 1.6rem;
-    font-weight: 650;
-    letter-spacing: -0.013em;
+    font-size: 1.7rem;
+    font-variation-settings: "slnt" 0, "wdth" 80, "wght" 550;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
 }
 
 .gh-article-meta-content {
@@ -2120,7 +2121,7 @@ headings, text, images and lists. We deal with cards lower down. */
 
 .gh-content {
     font-size: var(--content-font-size, 1.7rem);
-    letter-spacing: -0.01em;
+    letter-spacing: -0.015em;
 }
 
 /* Default vertical spacing */
@@ -2137,7 +2138,7 @@ headings, text, images and lists. We deal with cards lower down. */
 /* Add back a top margin to all headings,
 unless a heading is the very first element in the post content */
 .gh-content > [id]:not(:first-child) {
-    margin-top: calc(56px * var(--content-spacing-factor, 1));
+    margin-top: calc(36px * var(--content-spacing-factor, 1));
 }
 
 /* Add drop cap setting */
@@ -2177,12 +2178,12 @@ unless a heading is the very first element in the post content */
 
 .gh-content h2 {
     font-size: calc(1.6em * var(--factor, 1));
-    letter-spacing: -0.02em;
+    color: var(--section-color, var(--ghost-accent-color));
 }
 
 .gh-content h3 {
-    font-size: calc(1.3em * var(--factor, 1));
-    letter-spacing: -0.017em;
+    font-size: calc(1.2em * var(--factor, 1));
+    color: var(--section-color, var(--ghost-accent-color));
 }
 
 .gh-content a {
@@ -2637,7 +2638,7 @@ figcaption a {
     --factor: 1.1;
 }
 
-.has-sans-title :is(.is-title, .gh-content :is(h2, h3)) {
+.has-sans-title :is(.is-title) {
     font-family: var(--font-sans);
 }
 
@@ -2712,7 +2713,7 @@ figcaption a {
 }
 
 .has-serif-body .gh-card-excerpt {
-    font-size: 1.65rem;
+    font-size: 1.55rem;
     line-height: 1.4;
     letter-spacing: 0.0005em;
 }
@@ -2731,10 +2732,6 @@ figcaption a {
 
 .has-serif-body .gh-about-description {
     font-size: 1.6rem;
-}
-
-.has-serif-body .gh-article-excerpt {
-    letter-spacing: 0;
 }
 
 .has-serif-body .gh-footer-signup-subhead {
