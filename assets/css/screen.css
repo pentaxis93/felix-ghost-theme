@@ -2002,7 +2002,7 @@ Search                         LOGO                    Login Subscribe
 .gh-article-title {
     font-size: calc(clamp(3.4rem, 1.36vw + 2.85rem, 4.6rem) * var(--factor, 1));
     line-height: 1.1;
-    font-variation-settings: "slnt" 0, "wdth" 70, "wght" 550;
+    font-variation-settings: "slnt" 0, "wdth" 67.5, "wght" 600;
 }
 
 .gh-article-excerpt {
@@ -2178,11 +2178,17 @@ unless a heading is the very first element in the post content */
 
 .gh-content h2 {
     font-size: calc(1.6em * var(--factor, 1));
+    font-family: var(--font-serif);
+    font-variation-settings: "wght" 600;
+    letter-spacing: 0.01em;
     color: var(--section-color, var(--ghost-accent-color));
 }
 
 .gh-content h3 {
-    font-size: calc(1.2em * var(--factor, 1));
+    font-size: calc(1.1em * var(--factor, 1));
+    font-family: var(--font-serif);
+    font-variation-settings: "wght" 600;
+    letter-spacing: 0.01em;
     color: var(--section-color, var(--ghost-accent-color));
 }
 
@@ -2196,7 +2202,6 @@ unless a heading is the very first element in the post content */
     font-size: 0.95em;
 }
 
-.has-serif-body .gh-content > blockquote,
 .has-serif-body .gh-content > ol,
 .has-serif-body .gh-content > ul,
 .has-serif-body .gh-content > dl,
@@ -2366,15 +2371,29 @@ unless a heading is the very first element in the post content */
 
 /* Blockquote */
 
+blockquote {
+    font-family: var(--font-sans);
+    font-variation-settings: "wght" 600;
+}
+
 blockquote:not([class]) {
     padding-left: 2rem;
-    border-left: 4px solid var(--section-color, var(--ghost-accent-color));
+}
+
+blockquote:before {
+    margin-top: calc(48px * var(--content-spacing-factor, 1)) !important;
+    content: "“";
+    font-size: 15rem;
+    display: block;
+    line-height: 1.9rem;
+    color: var(--section-color, var(--ghost-accent-color));
+    font-variation-settings: "wght" 900;
+    font-family: var(--font-serif-alt);
 }
 
 blockquote.kg-blockquote-alt {
     font-style: normal;
-    font-weight: 400;
-    color: var(--color-secondary-text);
+    text-align: left;
 }
 
 /* Button */
@@ -2487,6 +2506,8 @@ figcaption {
     margin-top: 12px;
     font-size: 1.4rem;
     text-align: center;
+    font-family: var(--font-sans);
+    font-variation-settings: "wght" 600;
 }
 
 .kg-card.kg-width-full figcaption {
