@@ -906,6 +906,10 @@ Search                         LOGO                    Login Subscribe
     aspect-ratio: 16 / 9;
 }
 
+.gh-card-image.missing-feature-image {
+    background: var(--color-lighter-gray);
+}
+
 .gh-card-image img {
     position: absolute;
     inset: 0;
