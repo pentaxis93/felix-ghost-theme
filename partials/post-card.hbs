@@ -34,10 +34,12 @@
                     {{^has visibility="public"}}
                         {{> "icons/lock"}}
                     {{/has}}
-                {{/unless}}<!--
-             -->{{#if @custom.show_author}}
+                {{/unless}}
+                {{#if @custom.show_author}}
                     {{^has author="felix,anonymous"}}
                         <span class="gh-card-author">By {{#foreach authors}}{{#if @first}}{{name}}{{else}}, {{name}}{{/if}}{{/foreach}}</span>
+                    {{else}}
+                        <span><time class="gh-card-date" datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time></span>
                     {{/has}}
                 {{/if}}
                 {{#if @custom.show_publish_date}}
