@@ -2383,15 +2383,19 @@ unless a heading is the very first element in the post content */
 
 blockquote {
     font-family: var(--font-sans);
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: 0;
+    font-size: 2rem;
 }
 
 blockquote:not([class]) {
     padding-left: 2rem;
+    border-left: solid 0.5rem var(--section-color, var(--ghost-accent-color));
 }
 
-blockquote:before {
+blockquote.kg-blockquote-alt:before {
     margin-top: calc(48px * var(--content-spacing-factor, 1)) !important;
+    margin-bottom: calc(24px * var(--content-spacing-factor, 1)) !important;
     content: "“";
     font-size: 15rem;
     display: block;
