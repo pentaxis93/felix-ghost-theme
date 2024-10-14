@@ -62,8 +62,8 @@ production stylesheet in assets/built/screen.css
     --color-secondary-text: rgb(0 0 0 / 0.55);
     --color-border: rgb(0 0 0 / 0.08);
     --color-dark-border: rgb(0 0 0 / 0.55);
-    --font-sans: acumin-variable, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    --font-serif: lexia-variable, Georgia, Times, serif;
+    --font-sans: acumin-pro, sans-serif;
+    --font-serif: lexia, Georgia, Times, serif;
     --font-serif-alt: ff-tisa-web-pro, Georgia, Times, serif;
     --font-mono: "JetBrains Mono", Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
     --container-width: 1320px;
@@ -415,7 +415,6 @@ button.gh-form-input {
 .gh-navigation {
     height: 100px;
     font-size: 1.5rem;
-    font-weight: 550;
     background-color: var(--background-color);
     color: var(--color-darker-gray);
 }
@@ -929,9 +928,8 @@ Search                         LOGO                    Login Subscribe
 }
 
 .gh-card-title {
-    font-size: calc(1.9rem * var(--factor, 1));
-    font-variation-settings: "slnt" 0, "wdth" 72.5, "wght" 450;
-    letter-spacing: 0.012em;
+    font-size: calc(2.0rem * var(--factor, 1));
+    font-weight: 600;
     line-height: 1.3;
 }
 
@@ -1513,8 +1511,7 @@ Search                         LOGO                    Login Subscribe
 
 .gh-featured-feed .gh-card-title {
     font-size: 1.6rem;
-    font-weight: 650;
-    letter-spacing: -0.011em;
+    font-weight: 700;
 }
 
 @container featured-card-wrapper (width < 170px) {
@@ -1590,8 +1587,8 @@ Search                         LOGO                    Login Subscribe
     grid-column: 1 / -1;
     margin-top: 48px;
     font-size: calc(1.9rem * var(--factor, 1));
-    font-weight: 725;
-    letter-spacing: -0.014em;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .gh-container.has-sidebar .gh-more {
@@ -1609,7 +1606,7 @@ Search                         LOGO                    Login Subscribe
 }
 
 .gh-more svg {
-    margin-top: -1px;
+    margin-top: 3px;
     width: 18px;
     height: 18px;
 }
@@ -1979,7 +1976,7 @@ Search                         LOGO                    Login Subscribe
 .gh-article-section {
     margin-bottom: 24px;
     font-size: 2.1rem;
-    font-variation-settings: "wght" 725;
+    font-weight: 800;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     font-family: var(--font-serif);
@@ -2002,7 +1999,7 @@ Search                         LOGO                    Login Subscribe
 .gh-article-title {
     font-size: calc(clamp(3.4rem, 1.36vw + 2.85rem, 4.6rem) * var(--factor, 1));
     line-height: 1.1;
-    font-variation-settings: "slnt" 0, "wdth" 67.5, "wght" 600;
+    font-weight: 700;
 }
 
 .gh-article-excerpt {
@@ -2066,10 +2063,8 @@ Search                         LOGO                    Login Subscribe
 }
 
 .gh-article-author-name {
-    font-size: 1.7rem;
-    font-variation-settings: "slnt" 0, "wdth" 80, "wght" 550;
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
 .gh-article-meta-content {
@@ -2177,9 +2172,9 @@ unless a heading is the very first element in the post content */
 }
 
 .gh-content h2 {
-    font-size: calc(1.6em * var(--factor, 1));
+    font-size: calc(1.3em * var(--factor, 1));
     font-family: var(--font-serif);
-    font-variation-settings: "wght" 600;
+    font-weight: 800;
     letter-spacing: 0.01em;
     color: var(--section-color, var(--ghost-accent-color));
 }
@@ -2187,13 +2182,13 @@ unless a heading is the very first element in the post content */
 .gh-content h3 {
     font-size: calc(1.1em * var(--factor, 1));
     font-family: var(--font-serif);
-    font-variation-settings: "wght" 600;
+    font-weight: 800;
     letter-spacing: 0.01em;
     color: var(--section-color, var(--ghost-accent-color));
 }
 
 .gh-content a {
-    color: var(--ghost-accent-color);
+    color: var(--section-color, var(--ghost-accent-color));
     text-decoration: underline;
 }
 
@@ -2373,7 +2368,7 @@ unless a heading is the very first element in the post content */
 
 blockquote {
     font-family: var(--font-sans);
-    font-variation-settings: "wght" 600;
+    font-weight: 500;
 }
 
 blockquote:not([class]) {
@@ -2387,7 +2382,7 @@ blockquote:before {
     display: block;
     line-height: 1.9rem;
     color: var(--section-color, var(--ghost-accent-color));
-    font-variation-settings: "wght" 900;
+    font-weight: 900;
     font-family: var(--font-serif-alt);
 }
 
@@ -2504,10 +2499,16 @@ blockquote.kg-blockquote-alt {
 
 figcaption {
     margin-top: 12px;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.02em;
     text-align: center;
     font-family: var(--font-sans);
-    font-variation-settings: "wght" 600;
+    font-weight: 600;
+}
+
+figcaption b, figcaption strong {
+    font-weight: inherit;
+    color: var(--color-secondary-text);
 }
 
 .kg-card.kg-width-full figcaption {
@@ -2580,6 +2581,10 @@ figcaption a {
 .gh-archive .gh-article-image {
     grid-column: auto;
     margin-top: 0;
+}
+
+.gh-archive :is(.gh-article-excerpt) {
+    font-family: var(--font-serif-alt);
 }
 
 :is(.tag-template, .author-template) .gh-container {
@@ -2660,7 +2665,7 @@ figcaption a {
 }
 
 .has-sans-title :is(.is-title) {
-    font-family: var(--font-sans);
+    font-family: acumin-pro-condensed, sans-serif;
 }
 
 .has-serif-title :is(.is-title, .gh-content :is(h2, h3)) {
@@ -2773,6 +2778,15 @@ figcaption a {
 
 .has-serif-title .gh-cta-title {
     font-size: 4.8rem;
+}
+
+.gh-archive :is(.is-title) {
+    font-family: var(--font-serif);
+    color: var(--section-color);
+}
+
+.gh-archive :is(.gh-article-excerpt) {
+    font-family: var(--font-serif-alt);
 }
 
 /* 21. Footer
