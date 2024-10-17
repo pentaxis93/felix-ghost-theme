@@ -910,6 +910,12 @@ Search                         LOGO                    Login Subscribe
     background: var(--color-lighter-gray);
 }
 
+@media (max-width: 576px) {
+    .gh-card-image.missing-feature-image {
+        display: none;
+    }
+}
+
 .gh-card-image img {
     position: absolute;
     inset: 0;
