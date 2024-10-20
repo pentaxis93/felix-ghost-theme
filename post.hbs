@@ -4,11 +4,13 @@
 {{#post}}
 
 {{#if primary_tag}}
-    <style>
-        :root {
-            --section-color: {{primary_tag.accent_color}};
-        }
-    </style>
+    {{#if primary_tag.accent_color}}
+        <style>
+            :root {
+                --section-color: {{primary_tag.accent_color}};
+            }
+        </style>
+    {{/if}}
 {{/if}}
 
 <main class="gh-main">
