@@ -1997,7 +1997,7 @@ Search                         LOGO                    Login Subscribe
     letter-spacing: 0.05em;
     text-transform: uppercase;
     font-family: var(--font-serif);
-    color: var(--section-color, var(--ghost-accent-color));
+    color: var(--section-color, inherit);
 }
 
 .gh-article-section:after {
@@ -2010,17 +2010,16 @@ Search                         LOGO                    Login Subscribe
     left: -0.02em;
 }
 
-@keyframes rainbow {
-    0%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-
 .rainbow-text {
-    background-image: repeating-linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red, violet);
-    background-size: 20% 20%;
+    background-image: linear-gradient(to right, #ff0000, #ff7300, #ffc200, #b6ff00, #10ff00, #00ffae, #00e0ff, #0070ff, #1f00ff, #9a00ff, #ff00de, #ff0057);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: rainbow 15s linear infinite;
+}
+
+.rainbow-text:after {
+    /* In the absence of the requisite CSS knowledge to make an :after block rainbow-coloured,
+       I resort to making it invisible instead. */
+    display: none;
 }
 
 .gh-article-title {
@@ -2203,7 +2202,7 @@ unless a heading is the very first element in the post content */
     font-family: var(--font-serif);
     font-weight: 800;
     letter-spacing: 0.01em;
-    color: var(--section-color, var(--ghost-accent-color));
+    color: var(--section-color, inherit);
 }
 
 .gh-content h3 {
@@ -2211,7 +2210,7 @@ unless a heading is the very first element in the post content */
     font-family: var(--font-serif);
     font-weight: 800;
     letter-spacing: 0.01em;
-    color: var(--section-color, var(--ghost-accent-color));
+    color: var(--section-color, inherit);
 }
 
 .gh-content a {
