@@ -964,14 +964,11 @@ Search                         LOGO                    Login Subscribe
 }
 
 .gh-card-meta {
-    display: flex;
-    gap: 4px;
-    flex-wrap: wrap;
     align-items: center;
     padding-bottom: 1px;
     font-size: 1.25rem;
     font-weight: 500;
-    line-height: 1.05;
+    line-height: 1.4;
     letter-spacing: -0.004em;
     color: var(--color-secondary-text);
 }
@@ -981,14 +978,16 @@ Search                         LOGO                    Login Subscribe
 }
 
 .gh-card-meta svg {
-    width: 16px;
-    height: 16px;
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
     margin-right: 2px;
-    margin-top: -2px;
 }
 
 .gh-card-meta:not(:empty) {
-    margin-top: 12px;
+    margin-top: 8px;
 }
 
 .gh-card-author + .gh-card-date::before {
@@ -1235,7 +1234,7 @@ Search                         LOGO                    Login Subscribe
 }
 
 .gh-header.is-highlight .gh-header-left .gh-card .gh-card-meta:not(:empty) {
-    margin-top: 14px;
+    margin-top: 12px;
 }
 
 .gh-header.is-highlight .gh-header-middle {
@@ -1541,7 +1540,7 @@ Search                         LOGO                    Login Subscribe
 }
 
 .gh-featured-feed .gh-card-meta:not(:empty) {
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 .gh-featured-feed .gh-card::before {
@@ -1700,7 +1699,7 @@ Search                         LOGO                    Login Subscribe
 }
 
 .gh-container .gh-card-meta:not(:empty) {
-    margin-top: 16px;
+    margin-top: 12px;
 }
 
 /* 12.1. List style */
@@ -2031,8 +2030,8 @@ Search                         LOGO                    Login Subscribe
 .gh-article-excerpt {
     margin-top: clamp(12px, 0.45vw + 10.18px, 16px);
     max-width: 720px;
-    font-size: clamp(1.5rem, 0.45vw + 1.32rem, 1.9rem);
-    line-height: 1.4;
+    font-size: clamp(1.7rem, 0.23vw + 1.61rem, 1.9rem);
+    line-height: 1.45;
     letter-spacing: -0.01em;
     color: var(--color-secondary-text);
     font-weight: 600;
