@@ -1,4 +1,13 @@
 routes:
+  /culture/:
+    template: tag
+    controller: channel
+    filter: tag:[arts,music,phoenix]
+
+  /food-travel/:
+    template: tag
+    controller: channel
+    filter: tag:[food,travel]
 
 collections:
   /:

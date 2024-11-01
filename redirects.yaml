@@ -6912,7 +6912,6 @@
   ^/arts-2/(.*)$: /arts/$1
   ^/visual_art/(.*)$: /arts/$1
   ^/theatre/(.*)$: /arts/$1
-  ^/culture/(.*)$: /arts/$1
   ^/opera/(.*)$: /arts/$1
   ^/clash_of_cultures/(.*)$: /arts/$1
   ^/series/(.*)$: /film-tv/$1
