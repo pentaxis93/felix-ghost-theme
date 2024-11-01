@@ -1530,7 +1530,7 @@ Search                         LOGO                    Login Subscribe
 
 .gh-featured-feed .gh-card-title {
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 @container featured-card-wrapper (width < 170px) {
