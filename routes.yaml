@@ -1,0 +1,10 @@
+routes:
+
+collections:
+  /:
+    permalink: /articles/{slug}/
+    template: index
+
+taxonomies:
+  tag: /{slug}/
+  author: /author/{slug}/
