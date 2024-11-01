@@ -6945,6 +6945,7 @@
   ^/water_polo/(.*)$: /sport-societies/$1
   ^/investment/(.*)$: /business/$1
   ^/hangman/(.*)$: /catnip/$1
+  ^/millennials/(.*)$: /sex/$1
 
   # Check this one
   ^/img/(.+)$: /content/images/file/felixonline/img/$1
