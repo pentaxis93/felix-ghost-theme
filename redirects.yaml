@@ -6962,6 +6962,9 @@
   # felixonline.co.uk/issuearchive/issue/90/download/
   ^/issuearchive/issue/([0-9]+)/download/$: https://issues.felixonline.co.uk/felix_$1.pdf
 
+  # felixonline.co.uk/pdf/issue-1856
+  ^/pdf/issue-([0-9]+)/?$: https://issues.felixonline.co.uk/felix_$1.pdf
+
   # felixonline.co.uk/issues/felix_326/
   ^/issues/felix_([0-9]+)/?$: https://issues.felixonline.co.uk/felix_$1.pdf
 

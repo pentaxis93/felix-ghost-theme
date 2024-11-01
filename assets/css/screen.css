@@ -170,6 +170,10 @@ a:hover {
     border-radius: 100px;
 }
 
+.gh-button-secondary {
+    background-color: var(--color-dark-gray);
+}
+
 .gh-button:hover {
     opacity: 0.95;
 }
