@@ -772,7 +772,6 @@ Search                         LOGO                    Login Subscribe
     #gh-navigation .gh-navigation-inner {
         grid-template-rows: auto 1fr auto;
         grid-template-columns: 1fr;
-        gap: 48px;
     }
 
     #gh-navigation .gh-navigation-brand {
@@ -801,7 +800,7 @@ Search                         LOGO                    Login Subscribe
     }
 
     #gh-navigation .nav {
-        gap: 20px;
+        gap: 16px;
         align-items: center;
         line-height: 1.4;
     }
