@@ -250,6 +250,7 @@
   /arts/3572/la-neuro-vague: /articles/2013-5-16-la-neuro-vague/
   /arts/3605/top-10-book-covers: /articles/2013-5-23-top-10-book-covers/
   /arts/3639/a-stones-throw-away: /articles/2013-5-30-a-stones-throw-away/
+  /arts/3660/where-arethe--female-artists/: /articles/2013-6-5-where-are-the-female-artists/
   /arts/3660/where-are-the-female-artists: /articles/2013-6-5-where-are-the-female-artists/
   /arts/3661/beauty-and-the-beholders-eye: /articles/2013-6-5-beauty-and-the-beholders-eye/
   /arts/3676/a-life-of-sex-drugs-and-pas-de-cheval: /articles/2013-6-13-a-life-of-sex-drugs-and-pas-de-cheval/
@@ -2009,6 +2010,7 @@
   /features/6758/should-the-t-be-dropped-from-lgbt: /articles/2017-2-10-should-the-t-be-dropped-from-lgbt/
   /features/6764/whats-a-queer-gal-to-doseewatchlisten-to-our-guide-to-your-gal-pal-culture-fix: /articles/2017-2-10-whats-a-queer-gal-to-doseewatchlisten-to-our-guide-to-your-gal-pal-culture-fix/
   /features/6796/are-we-killing-the-planet-in-style--sustainable-fashion: /articles/2017-2-17-are-we-killing-the-planet-in-style-sustainable-fashion/
+  /features/6796/are-we-killing-the-planet-in-style–sustainable-fashion/: /articles/2017-2-17-are-we-killing-the-planet-in-style-sustainable-fashion/
   /features/6799/love-is-the-drug-you-cant-get-enough-of: /articles/2017-2-17-love-is-the-drug-you-cant-get-enough-of/
   /features/6819/academy-awards-2017--our-predictions-of-who-will-win-and-who-should-win: /articles/2017-2-24-academy-awards-2017-our-predictions-of-who-will-win-and-who-should-win/
   /features/6867/higher-education-faces-depression-epidemic: /articles/2017-3-10-higher-education-faces-depression-epidemic/
@@ -4324,6 +4326,7 @@
   /news/3663/energia-fitness-fun-day-next-week: /articles/2013-6-6-energia-fitness-fun-day-next-week/
   /news/3664/5000-essay-prize-for-imperial-mba-student: /articles/2013-6-6-5000-essay-prize-for-imperial-mba-student/
   /news/3665/re-mark-for-the-grading-system: /articles/2013-6-6-re-mark-for-the-grading-system/
+  /news/3667/oh-gee-a-point-average/: /articles/2013-6-6-oh-gee-a-point-average/
   /news/3668/imperial-climbs-league-table: /articles/2013-6-6-imperial-climbs-league-table/
   /news/3671/rcc-awards-announced: /articles/2013-6-7-rcc-awards-announced/
   /news/3688/union-awards-announced-2013: /articles/2013-6-13-union-awards-announced-2013/
@@ -6876,6 +6879,11 @@
   /welfare/5982/life-after-anorexia-ibs: /articles/2016-2-26-life-after-anorexia-ibs/
   /welfare/6193/how-to-survive-exams: /articles/2016-5-20-how-to-survive-exams/
 
+  /articles/2015-12-11-all-i-want-for-christmas-is-the-truth/: /articles/2015-12-15-all-i-want-for-christmas-is-the-truth/
+  /articles/2015-12-11-thatcherites-of-the-world-unite/: /articles/2015-12-15-thatcherites-of-the-world-unite/
+  /articles/2018-10-29-your-filename/: /articles/2018-10-29-volkswagen-enters-saas-with-microsoft/
+  /articles/2018-11-19-your-filename/: /articles/2018-11-19-eminem-kamikaze-chart-success/
+
   ^/issue/([0-9]+)/?$: /issue-$1/
   ^/issues/phoenix_[0-9]+/?$: /phoenix/
 
@@ -6952,7 +6960,7 @@
 
   ^/edit/.*$: /ghost/
 
-  /sexsurvey: /articles/sex-survey-2024/
+  ^(/go)?/sexsurvey: /articles/sex-survey-2024/
   /analytics/?: https://dash.cloudflare.com/50734aeb93a35de4711d9de60f5d32ab/web-analytics/overview?excludeBots=Yes&referer~neq=felix.ghost.io
 
   # felixonline.co.uk/archive/IC_1949/1949_0001_A.pdf
