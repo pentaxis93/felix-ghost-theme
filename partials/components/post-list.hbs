@@ -71,9 +71,11 @@
 
                 {{!-- Tag and author pages --}}
                 {{#match feed "archive"}}
-                    {{#foreach posts}}
-                        {{> "post-card" lazyLoad=true}}
-                    {{/foreach}}
+                    {{#get "posts" filter="tag:{{tag.slug}}" include="authors" order="featured desc, published_at asc"}}
+                        {{#foreach posts}}
+                            {{> "post-card" lazyLoad=true}}
+                        {{/foreach}}
+                    {{/get}}
                 {{/match}}
 
             </div>
