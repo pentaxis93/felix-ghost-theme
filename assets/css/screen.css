@@ -36,14 +36,15 @@ production stylesheet in assets/built/screen.css
 15. Content
 16. Cards
 17. Comments
-18. Recent posts
-19. Archive
-20. Design settings
-21. Footer
-  21.1. Footer styles
-  21.2. Footer bar
-  21.3. Footer signup
-22. Lightbox
+18. Portal
+19. Recent posts
+20. Archive
+21. Design settings
+22. Footer
+  22.1. Footer styles
+  22.2. Footer bar
+  22.3. Footer signup
+23. Lightbox
 
 */
 
@@ -2596,7 +2597,25 @@ figcaption b, figcaption strong {
     margin-top: 48px;
 }
 
-/* 18. Recent posts
+/* 18. Portal
+/* ---------------------------------------------------------- */
+
+.gh-portal-popup-container {
+    background: var(--background-color) !important;
+    background-color: var(--background-color) !important;
+    color: var(--color-primary-text) !important;
+}
+
+.gh-portal-popup-container input,
+.gh-portal-popup-container button {
+    color: var(--color-primary-text) !important;
+}
+
+.gh-portal-popup-container input {
+    background-color: var(--color-lighter-gray) !important;
+}
+
+/* 19. Recent posts
 /* ---------------------------------------------------------- */
 
 .post-template .gh-container {
@@ -2615,7 +2634,7 @@ figcaption b, figcaption strong {
     display: block;
 }
 
-/* 19. Archive
+/* 20. Archive
 /* ---------------------------------------------------------- */
 
 .gh-archive {
@@ -2722,7 +2741,7 @@ figcaption b, figcaption strong {
     }
 }
 
-/* 20. Design settings
+/* 21. Design settings
 /* ---------------------------------------------------------- */
 
 .has-serif-title {
@@ -2858,7 +2877,7 @@ figcaption b, figcaption strong {
     font-family: var(--font-serif-alt);
 }
 
-/* 21. Footer
+/* 22. Footer
 /* ---------------------------------------------------------- */
 
 .gh-footer {
@@ -2871,7 +2890,7 @@ figcaption b, figcaption strong {
     color: inherit;
 }
 
-/* 21.1 Footer styles */
+/* 22.1 Footer styles */
 
 .gh-footer.has-accent-color {
     background-color: var(--ghost-accent-color);
@@ -2886,7 +2905,7 @@ figcaption b, figcaption strong {
     color: #15171a;
 }
 
-/* 21.2. Footer bar */
+/* 22.2. Footer bar */
 
 .gh-footer-bar {
     display: grid;
@@ -2930,7 +2949,7 @@ figcaption b, figcaption strong {
     text-decoration: underline;
 }
 
-/* 21.3. Footer signup */
+/* 22.3. Footer signup */
 
 .gh-footer-signup {
     display: flex;
@@ -2968,7 +2987,7 @@ figcaption b, figcaption strong {
     }
 }
 
-/* 22. Lightbox
+/* 23. Lightbox
 /* ---------------------------------------------------------- */
 
 .pswp {
