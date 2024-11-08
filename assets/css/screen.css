@@ -82,7 +82,7 @@ production stylesheet in assets/built/screen.css
 
 @property --ghost-accent-color {
     syntax: "<color>";
-    inherits: false;
+    inherits: true;
     initial-value: #da2128;
 }
 
