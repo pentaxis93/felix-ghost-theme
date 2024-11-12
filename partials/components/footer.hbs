@@ -24,7 +24,7 @@
                     <p class="gh-footer-signup-subhead is-body">
                         {{#if @custom.signup_subheading}}{{@custom.signup_subheading}}{{else}}{{@site.description}}{{/if}}
                     </p>
-                    {{> "email-subscription" email_field_id="footer-email"}}
+                    <a class="gh-button" href="#/portal/signup" data-portal="signup" style="margin-top: 40px">Subscribe</a>
                 </section>
             {{/unless}}
         {{/if}}
