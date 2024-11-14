@@ -57,7 +57,9 @@
             </div>
             {{/if}}
 
-            {{> "feature-image"}}
+            {{^has tag="#hide-feature-image"}}
+              {{> "feature-image"}}
+            {{/has}}
 
         </header>
 
