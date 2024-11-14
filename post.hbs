@@ -95,7 +95,7 @@ The current post is always excluded from the results.
   
     {{#get "posts" 
         include="authors"
-        filter="id:-{{post.id}}+tag:[{{post.primary_tag.slug}}]"
+        filter="id:-{{post.id}}"
         order="featured desc, published_at asc"
         as |related|}}
         {{#if related}}
