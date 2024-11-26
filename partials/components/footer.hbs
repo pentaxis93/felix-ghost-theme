@@ -1,20 +1,6 @@
 <footer class="gh-footer{{#match @custom.header_and_footer_color "Accent color"}} has-accent-color{{/match}} gh-outer">
     <div class="gh-footer-inner gh-inner">
 
-        <div class="gh-footer-bar">
-            <span class="gh-footer-logo is-title">
-                {{#if @site.logo}}
-                    <img src="{{img_url @site.logo size="xs" format="webp"}}" alt="{{@site.title}}">
-                {{else}}
-                    {{@site.title}}
-                {{/if}}
-            </span>
-            <nav class="gh-footer-menu">
-                {{navigation type="secondary"}}
-            </nav>
-            <div class="gh-footer-copyright">Copyright {{date format="YYYY"}} 5th Ave. Gallery</div>
-        </div>
-
         {{#if @site.members_enabled}}
             {{#unless @member}}
                 <section class="gh-footer-signup">
@@ -28,6 +14,20 @@
                 </section>
             {{/unless}}
         {{/if}}
+
+        <div class="gh-footer-bar">
+            <span class="gh-footer-logo is-title">
+                {{#if @site.logo}}
+                    <img src="{{img_url @site.logo size="xs" format="webp"}}" alt="{{@site.title}}">
+                {{else}}
+                    {{@site.title}}
+                {{/if}}
+            </span>
+            <nav class="gh-footer-menu">
+                {{navigation type="secondary"}}
+            </nav>
+            <div class="gh-footer-copyright">Copyright {{date format="YYYY"}} 5th Ave. Gallery</div>
+        </div>
 
     </div>
 </footer>
